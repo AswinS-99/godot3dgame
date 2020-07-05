@@ -1,0 +1,1135 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://Spatial.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/OBJ format/bedDouble.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/OBJ format/doorwayFront.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Models/OBJ format/lampRoundFloor.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Models/OBJ format/wallHalf.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Models/OBJ format/tableGlass.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Models/OBJ format/computerScreen.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Models/OBJ format/computerMouse.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Models/OBJ format/pottedPlant.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Models/OBJ format/wallWindow.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Models/OBJ format/coatRack.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Models/OBJ format/loungeDesignSofa.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Models/OBJ format/wallDoorwayWide.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Models/OBJ format/wallWindowSlide.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Models/OBJ format/trashcan.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Models/OBJ format/plantSmall3.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Models/OBJ format/rugRound.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Models/OBJ format/tableCloth.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Models/OBJ format/televisionModern.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Models/OBJ format/televisionAntenna.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Models/OBJ format/speakerSmall.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Models/OBJ format/paneling.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Models/OBJ format/plantSmall1.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Models/OBJ format/bear.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Models/OBJ format/chairDesk.obj" type="ArrayMesh" id=25]
+[ext_resource path="res://Models/OBJ format/coatRackStanding.obj" type="ArrayMesh" id=26]
+[ext_resource path="res://Models/OBJ format/loungeSofaLong.obj" type="ArrayMesh" id=27]
+[ext_resource path="res://Models/OBJ format/bookcaseOpen.obj" type="ArrayMesh" id=28]
+[ext_resource path="res://Models/OBJ format/books.obj" type="ArrayMesh" id=29]
+[ext_resource path="res://Models/OBJ format/cabinetBedDrawerTable.obj" type="ArrayMesh" id=30]
+[ext_resource path="res://Models/OBJ format/stoolBar.obj" type="ArrayMesh" id=31]
+[ext_resource path="res://Models/OBJ format/washerDryerStacked.obj" type="ArrayMesh" id=32]
+[ext_resource path="res://Models/OBJ format/rugRectangle.obj" type="ArrayMesh" id=33]
+[ext_resource path="res://Models/OBJ format/lampWall.obj" type="ArrayMesh" id=34]
+[ext_resource path="res://Models/OBJ format/cardboardBoxClosed.obj" type="ArrayMesh" id=35]
+[ext_resource path="res://Models/OBJ format/lampSquareCeiling.obj" type="ArrayMesh" id=36]
+[ext_resource path="res://Models/OBJ format/doorway.obj" type="ArrayMesh" id=37]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1, 1, 0.356881 )
+
+[sub_resource type="BoxShape" id=3]
+
+[sub_resource type="BoxShape" id=4]
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 1, 1, 0.415922 )
+
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 0.359029, 0.248962, 0.245582 )
+
+[sub_resource type="BoxShape" id=7]
+
+[sub_resource type="BoxShape" id=8]
+
+[node name="Spatial" index="0" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.208238, 0, 0 )
+
+[node name="wall" parent="StaticBody238" index="0"]
+transform = Transform( 1, 0, -5.96046e-08, 0, 1, 0, 1.49012e-08, 0, 1, 0.510837, 0.109502, -0.371112 )
+
+[node name="bed" type="StaticBody" parent="." index="65"]
+transform = Transform( -1.97361, 0, 0.12286, 0, 1.6088, 0, -0.0903397, 0, -1.8175, -4.43359, 0.387092, 22.4362 )
+
+[node name="bedDouble" type="MeshInstance" parent="bed" index="0"]
+transform = Transform( 1, 0, 5.21541e-08, 0, 1, 0, 2.42144e-07, 0, 1, 0.242003, -0.226446, -0.479044 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="bed" index="1"]
+transform = Transform( 0.544484, 0, 0.000286382, 0, 0.0811779, 0, 0.000228718, 0, 0.549071, -0.156198, 0, 0.00776386 )
+shape = SubResource( 1 )
+
+[node name="doorwayFront" type="MeshInstance" parent="bed" index="2"]
+transform = Transform( -0.0977224, 0, -1.47693, 0, 1.02726, 0, 0.936884, 0, 0.254954, 0.788234, -0.218854, -0.0884619 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="lampRoundFloor" type="MeshInstance" parent="bed/doorwayFront" index="0"]
+transform = Transform( 0.671497, 0, 0.00842286, 0, 0.742177, 0, -0.00452013, 0, 0.627375, 0.637451, 0.0370485, -0.0634708 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="StaticBody257" parent="." index="74"]
+transform = Transform( 4.67791, 0.0034128, -0.619445, -0.0138093, 1.15639, 0.00181634, 0.10097, 4.10141e-05, 0.332801, 8.57643, -0.0141015, 24.6915 )
+
+[node name="wall2" parent="StaticBody257" index="3"]
+transform = Transform( 0.999897, -0.00349602, 1.33663e-05, 0.0581947, 0.999896, -0.00765328, 1.30832e-05, 0.000447516, 0.999998, 0.246611, 0.11589, -0.341942 )
+
+[node name="wallHalf" type="MeshInstance" parent="StaticBody258/wall3" index="0"]
+transform = Transform( 0.642796, -0.00024919, 0.0473007, -0.00424585, 0.984085, 0.000562402, 0.108374, 7.75644e-05, 0.985649, -0.286061, -0.00829397, 5.50225 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="StaticBody" type="StaticBody" parent="StaticBody258/wall3/wallHalf" index="0"]
+transform = Transform( 1.00001, -0.000924736, -1.47521e-06, -0.0154001, 2.28961, 0.00202559, -1.46031e-06, 0.00012163, 1, -0.188805, 0.720805, 0.0572128 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody258/wall3/wallHalf/StaticBody" index="0"]
+transform = Transform( 0.236958, -1.99159e-05, 0.0511924, -0.000435488, 0.257998, 6.15473e-05, 0.11729, 5.10928e-05, 0.608019, -0.0794029, -0.0265296, 0.0240936 )
+shape = SubResource( 2 )
+
+[node name="wall2" parent="StaticBody263" index="2"]
+transform = Transform( 0.999897, -0.00349602, 1.34706e-05, 0.0581947, 0.999896, -0.00765328, 1.32024e-05, 0.000447517, 0.999998, 0.229137, 0.106802, -0.472319 )
+
+[node name="wall4" parent="StaticBody274" index="1"]
+transform = Transform( 0.999999, 4.07454e-10, -1.04308e-07, 9.31323e-10, 0.999998, -5.82077e-10, -1.49012e-07, -3.20142e-10, 1, 0.212383, 0.0821822, -0.443254 )
+
+[node name="wall2" parent="StaticBody266" index="2"]
+transform = Transform( 0.999897, -0.00349602, 1.33961e-05, 0.0581947, 0.999896, -0.00765328, 1.31428e-05, 0.000447516, 0.999998, 0.246611, 0.115852, -0.342049 )
+
+[node name="wall" parent="StaticBody250" index="0"]
+transform = Transform( 1, 0, -7.45058e-08, 0, 1, 0, -2.08616e-07, 0, 1, 0.247742, 0.112779, -0.331882 )
+
+[node name="wall" parent="StaticBody249" index="0"]
+transform = Transform( 0.820886, 0, 0.0228472, 0, 1, 0, -0.0991713, 0, 1.01265, 0.145069, 0.11589, -0.398182 )
+
+[node name="lampRoundFloor" type="MeshInstance" parent="StaticBody249/wall" index="0"]
+transform = Transform( 0.490028, 0, 0.303038, 0, 1, 0, -1.31537, 0, 3.03352, -0.654089, 0.144726, 7.35975 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="TIPOY" type="StaticBody" parent="." index="305"]
+transform = Transform( 0.797509, 0, 0, 0, 0.633257, 0, 0, 0, 2.09177, -1.73493, 0.366537, 3.1365 )
+
+[node name="CollisionShape" type="CollisionShape" parent="TIPOY" index="0"]
+transform = Transform( 0.39242, 0, 0, 0, 0.0852307, 0, 0, 0, 0.238126, -0.00453734, -0.166636, 0 )
+shape = SubResource( 3 )
+
+[node name="tableGlass" type="MeshInstance" parent="TIPOY/CollisionShape" index="0"]
+transform = Transform( 2.54829, 0, 0, 0, 11.7329, 0, 0, 0, 4.19946, 0.969657, -3.05314, -0.969569 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="tableGlass2" type="MeshInstance" parent="TIPOY/CollisionShape" index="1"]
+transform = Transform( 2.54829, 0, 0, 0, 18.0019, 0, 0, 0, 4.19946, 11.6899, -3.10084, -0.166514 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="computerScreen" type="MeshInstance" parent="TIPOY/CollisionShape/tableGlass2" index="0"]
+transform = Transform( 0.0716818, 0, -2.61613, 0, 1, 0, 0.38028, 0, 0.0716818, -0.00923228, 0.3267, 0.322387 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="computerMouse" type="MeshInstance" parent="TIPOY/CollisionShape/tableGlass2/computerScreen" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.634001, -1.49012e-07, 0.0619801 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+
+[node name="pottedPlant" type="MeshInstance" parent="FLOOR2/CollisionShape2/floorFull" index="0"]
+transform = Transform( 0.0506385, 0, 0, 0, 0.944044, 0, 0, 0, 0.191726, -0.59579, 0.05, 0.0253506 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="wallWindow" type="MeshInstance" parent="FLOOR2/CollisionShape2/floorFull/pottedPlant" index="0"]
+transform = Transform( 0.500427, 0, 0, 0, 0.873964, 0, 0, 0, 1, 0.953259, 6.70552e-08, -0.128265 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="coatRack" type="MeshInstance" parent="FLOOR2/CollisionShape2/floorFull" index="1"]
+transform = Transform( -0.064552, 0.00113762, 0.0058502, 0.089065, 0.962265, 1.43079, 0.00229686, -0.0128851, 0.24497, -0.444782, 0.867505, 0.597526 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="StaticBody304" type="StaticBody" parent="." index="323"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.785245, 0.247913, 3.02625 )
+
+[node name="loungeDesignSofa" type="MeshInstance" parent="StaticBody304" index="0"]
+transform = Transform( 0.00257772, 0, 0.999997, 0, 1, 0, -0.999997, 0, 0.00257772, -0.224254, -0.151686, -0.623752 )
+mesh = ExtResource( 12 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody304" index="1"]
+transform = Transform( 0.299148, 0, 0, 0, 0.129016, 0, 0, 0, 0.505169, 0, 0.0884434, -0.0854163 )
+shape = SubResource( 4 )
+
+[node name="wallDoorwayWide" type="MeshInstance" parent="StaticBody304" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.132198, -0.151686, -3.28883 )
+mesh = ExtResource( 13 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="wallWindowSlide" type="MeshInstance" parent="." index="324"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54913, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide5" type="MeshInstance" parent="." index="325"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.274483, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide12" type="MeshInstance" parent="." index="326"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04785, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide13" type="MeshInstance" parent="." index="327"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6382, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide14" type="MeshInstance" parent="." index="328"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45061, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide15" type="MeshInstance" parent="." index="329"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.31261, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide16" type="MeshInstance" parent="." index="330"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96797, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide17" type="MeshInstance" parent="." index="331"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.99281, 0.0962269, -0.383152 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallDoorwayWide" type="MeshInstance" parent="wallWindowSlide17" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6249, 0.0144738, -0.0695495 )
+mesh = ExtResource( 13 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="wallWindowSlide2" type="MeshInstance" parent="." index="332"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.92022, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide3" type="MeshInstance" parent="." index="333"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.52396, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide4" type="MeshInstance" parent="." index="334"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.30231, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide6" type="MeshInstance" parent="." index="335"]
+transform = Transform( 0.999985, -0.00534336, -0.000921874, 0.00534256, 0.999985, -0.000864073, 0.00092648, 0.000859133, 0.999999, -8.00594, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide7" type="MeshInstance" parent="." index="336"]
+transform = Transform( 0.999985, -0.00534336, -0.000921874, 0.00534256, 0.999985, -0.000864073, 0.00092648, 0.000859133, 0.999999, -12.4598, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide11" type="MeshInstance" parent="." index="337"]
+transform = Transform( 0.999985, -0.00534336, -0.000921874, 0.00534256, 0.999985, -0.000864073, 0.00092648, 0.000859133, 0.999999, -14.4598, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide10" type="MeshInstance" parent="." index="338"]
+transform = Transform( 0.999985, -0.00534336, -0.000921874, 0.00534256, 0.999985, -0.000864073, 0.00092648, 0.000859133, 0.999999, -11.0851, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide9" type="MeshInstance" parent="." index="339"]
+transform = Transform( 0.999985, -0.00534336, -0.000921874, 0.00534256, 0.999985, -0.000864073, 0.00092648, 0.000859133, 0.999999, -9.55047, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide8" type="MeshInstance" parent="." index="340"]
+transform = Transform( 0.999985, -0.00534336, -0.000921874, 0.00534256, 0.999985, -0.000864073, 0.00092648, 0.000859133, 0.999999, -9.55047, 0.0805448, -0.385374 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="trashcan" type="MeshInstance" parent="." index="341"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.00239, 0.096227, -5.3299 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="plantSmall3" type="MeshInstance" parent="." index="342"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.43017, 0.0962269, -4.40065 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="rugRound" type="MeshInstance" parent="." index="343"]
+transform = Transform( 0.999722, 0, 0.023595, 0, 1, 0, -0.023595, 0, 0.999722, -0.639375, 0.0962269, -0.133801 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="TABLETV" type="StaticBody" parent="." index="344"]
+transform = Transform( 0.087857, 0, -0.996133, 0, 0.800518, 0, 3.00952, 0, 0.265434, -2.91082, 0.400194, 3.02882 )
+
+[node name="tableCloth" type="MeshInstance" parent="TABLETV" index="0"]
+transform = Transform( 0.536956, 0, -0.0408396, 0, 1.24919, 0, -0.0408394, 0, 0.996398, 0.241752, -0.329252, -0.240409 )
+mesh = ExtResource( 18 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="TABLETV" index="1"]
+transform = Transform( 0.25776, 0, -0.0496205, 0, 0.170072, 0, -0.0496205, 0, 0.815986, 0, 0, 0 )
+shape = SubResource( 5 )
+
+[node name="televisionModern" type="MeshInstance" parent="." index="345"]
+transform = Transform( 0.0371315, 0, -0.99931, 0, 1, 0, 1.27251, 0, 0.047283, -2.86749, 0.49856, 3.20434 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="televisionAntenna" type="MeshInstance" parent="televisionModern" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, -3.72529e-09, 0, 1, -0.00668001, 0.343264, 0.419858 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+
+[node name="speakerSmall" type="MeshInstance" parent="televisionModern" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, -1.49012e-08, 0, 1, -0.503348, -0.0106872, 0.0560718 )
+mesh = ExtResource( 21 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="paneling" type="MeshInstance" parent="televisionModern/speakerSmall" index="0"]
+transform = Transform( 1.00011, 0, 0.0224601, 0, 1, 0, -0.0363692, 0, 0.999074, -1.1145, 0.115664, -2.86066 )
+mesh = ExtResource( 22 )
+material/0 = null
+material/1 = null
+
+[node name="plantSmall1" type="MeshInstance" parent="televisionModern/speakerSmall/paneling" index="0"]
+transform = Transform( 0.999074, 0, -0.0224601, 0, 1, 0, 0.0363692, 0, 1.00011, -0.977747, -0.50731, 0.33088 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="pottedPlant" type="MeshInstance" parent="televisionModern/speakerSmall/paneling" index="1"]
+transform = Transform( 0.999074, 0, -0.0224601, 0, 1, 0, 0.0363692, 0, 1.00011, -0.840566, -0.50731, 0.289653 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="plantSmall4" type="MeshInstance" parent="." index="346"]
+transform = Transform( 0.0371315, 0, -0.99931, 0, 1, 0, 1.27251, 0, 0.047283, -0.158473, 0.0962269, -0.232289 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="trashcan2" type="MeshInstance" parent="." index="347"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.236171, 0.0962269, 0.345603 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="wallWindowSlide18" type="MeshInstance" parent="." index="348"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0862337, 0.123767, 6.58827 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="wallWindowSlide19" type="MeshInstance" parent="." index="349"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5556, 0.134465, 6.64204 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="bear" type="MeshInstance" parent="." index="350"]
+transform = Transform( 0.149626, 0, 0.988743, 0, 1, 0, -0.988743, 0, 0.149626, 0.804942, 0.880035, 5.76026 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="wallWindow" type="MeshInstance" parent="." index="351"]
+transform = Transform( 0.999749, 0, -0.022437, 0, 1, 0, 0.022437, 0, 0.999749, 3.10134, 0.0962269, -0.294449 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="wallWindow2" type="MeshInstance" parent="." index="352"]
+transform = Transform( 0.999749, 0, -0.022437, 0, 1, 0, 0.022437, 0, 0.999749, 4.66402, 0.0962269, -0.29445 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="wallWindow3" type="MeshInstance" parent="." index="353"]
+transform = Transform( 0.0998365, 0, 0.995005, 0, 1, 0, -0.995005, 0, 0.0998365, 5.58533, 0.0962269, 0.62241 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="bear2" type="MeshInstance" parent="." index="354"]
+transform = Transform( 0.149626, 0, 0.988743, 0, 1, 0, -0.988743, 0, 0.149626, 0.804942, 0.880035, 4.02123 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="bear3" type="MeshInstance" parent="." index="355"]
+transform = Transform( 0.149626, 0, 0.988743, 0, 1, 0, -0.988743, 0, 0.149626, 0.804942, 0.880035, 2.92366 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="bear4" type="MeshInstance" parent="." index="356"]
+transform = Transform( 0.149626, 0, 0.988743, 0, 1, 0, -0.988743, 0, 0.149626, 0.808979, 0.880035, 1.47405 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="wallWindowSlide20" type="MeshInstance" parent="." index="357"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.07198, 0.138127, 6.40534 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="doorwayFront" type="MeshInstance" parent="." index="358"]
+transform = Transform( 1.41617, 0, 0, 0, 1.13964, 0, 0, 0, -1.94195, 3.482, 0.182604, 6.51594 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="karanguna chair'" type="StaticBody" parent="." index="359"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.41026, 0.417098, 3.22834 )
+
+[node name="chairDesk" type="MeshInstance" parent="karanguna chair'" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.147002, -0.320871, 0 )
+mesh = ExtResource( 25 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="karanguna chair'" index="1"]
+transform = Transform( 0.60916, 0, 0, 0, 0.869813, 0, 0, 0, 0.697276, 0, 0.0738963, 0 )
+shape = SubResource( 6 )
+
+[node name="coatRackStanding" type="MeshInstance" parent="karanguna chair'" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18061, -0.309458, -1.80846 )
+mesh = ExtResource( 26 )
+material/0 = null
+material/1 = null
+
+[node name="lampRoundFloor" type="MeshInstance" parent="karanguna chair'" index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17629, -0.31509, -0.67866 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="sofa" type="StaticBody" parent="." index="360"]
+transform = Transform( 0.0568902, 0, 0.99838, 0, 1, 0, -1.2647, 0, 0.072066, 7.98022, 0.411736, 3.66834 )
+
+[node name="CollisionShape" type="CollisionShape" parent="sofa" index="0"]
+transform = Transform( 0.348346, 0, -4.34723e-05, 0, 0.153732, 0, -4.34816e-05, 0, 0.347585, 0, 0, 0 )
+shape = SubResource( 7 )
+
+[node name="loungeSofaLong" type="MeshInstance" parent="sofa/CollisionShape" index="0"]
+transform = Transform( 2.87071, 0, 0.000359103, 0, 6.50483, 0, 0.000359088, 0, 2.87699, 1.19519, -2.05233, -0.0681019 )
+mesh = ExtResource( 27 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="bookcaseOpen" type="MeshInstance" parent="sofa" index="1"]
+transform = Transform( 1, 0, 3.72529e-09, 0, 1, 0, 0, 0, 1, 0.67786, -0.315509, -2.27522 )
+mesh = ExtResource( 28 )
+material/0 = null
+material/1 = null
+
+[node name="books" type="MeshInstance" parent="sofa/bookcaseOpen" index="0"]
+transform = Transform( 1, 0, -7.45058e-09, 0, 1, 0, -3.72529e-09, 0, 1, -0.110598, 0.37, 0.0875583 )
+mesh = ExtResource( 29 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="books" type="MeshInstance" parent="sofa" index="2"]
+transform = Transform( 1, 0, 1.11759e-08, 0, 1, 0, 0, 0, 1, 0.451256, 0.293762, -2.13926 )
+mesh = ExtResource( 29 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="mesha" type="StaticBody" parent="sofa/books" index="0"]
+transform = Transform( 1.06035, 0, -0.00343899, 0, 0.686605, 0, -0.00343894, 0, 1.0002, -1.54337, -0.455494, 2.55957 )
+
+[node name="cabinetBedDrawerTable" type="MeshInstance" parent="sofa/books/mesha" index="0"]
+transform = Transform( 1.74313, 0, -0.0423454, 0, 1.45644, 0, -0.0423455, 0, 1.00241, 0.277247, -0.223967, -0.0157967 )
+mesh = ExtResource( 30 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="cabinetBedDrawerTable2" type="MeshInstance" parent="sofa/books/mesha" index="1"]
+transform = Transform( 0.10798, 0, -0.74991, 0, 1.45644, 0, 2.33935, 0, -0.0810977, -12.5177, -0.167255, -9.33091 )
+mesh = ExtResource( 30 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="pottedPlant" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2" index="0"]
+transform = Transform( 1, 0, 3.72529e-09, 0, 1, 0, 0, 0, 1, -0.18347, 0.2632, 0.101803 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="stoolBar" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2" index="1"]
+transform = Transform( 0.666637, 0, 0.0175998, 0, 1, 0, 0.0113263, 0, 0.999403, 1.02042, -0.0389389, -2.63795 )
+mesh = ExtResource( 31 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="trashcan" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar" index="0"]
+transform = Transform( 1, 0, 3.72529e-09, 0, 1, 0, 0, 0, 1, -0.572252, 0.00144721, 0.0691395 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="washerDryerStacked" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar" index="1"]
+transform = Transform( -0.984383, -0.0344459, -0.0761634, -0.0799928, 0.998525, -0.0147733, 0.185325, -0.0116337, -1.00003, -1.26106, 0.00144733, 0.174601 )
+mesh = ExtResource( 32 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="rugRectangle" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked" index="0"]
+transform = Transform( -3.29953, -0.144025, 0.0270648, -0.352631, 0.988188, 0.00223405, -0.553688, -0.0185302, 1.00445, 0.103077, 0.0081564, -1.62772 )
+mesh = ExtResource( 33 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="pottedPlant" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="0"]
+transform = Transform( 0.467466, -0.0177535, 0.00812929, -0.0431113, 0.998563, 0.000658107, -0.0303859, -0.001013, 1.00046, -0.771916, -0.095517, -0.557453 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="pottedPlant2" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="1"]
+transform = Transform( 0.465813, -0.0178085, 0.00815452, -0.0432451, 0.998558, 0.000660148, -0.0304802, -0.00101615, 1.00046, -0.771916, -0.095517, -0.557453 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="pottedPlant5" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="2"]
+transform = Transform( 0.465813, -0.0178085, 0.00815452, -0.0432451, 0.998558, 0.000660148, -0.0304801, -0.00101616, 1.00046, -1.01318, -0.115048, -0.571218 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="pottedPlant6" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="3"]
+transform = Transform( 0.465813, -0.0178086, 0.00815453, -0.043245, 0.998558, 0.000660149, -0.0304801, -0.00101616, 1.00046, -1.24669, -0.133952, -0.584543 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="pottedPlant3" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="4"]
+transform = Transform( 0.465813, -0.0178085, 0.00815452, -0.0432451, 0.998558, 0.000660148, -0.0304801, -0.00101616, 1.00046, -0.567526, -0.0789706, -0.545792 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="pottedPlant4" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="5"]
+transform = Transform( 0.465813, -0.0178086, 0.00815453, -0.043245, 0.998558, 0.000660149, -0.0304801, -0.00101617, 1.00046, -0.369986, -0.0629787, -0.534519 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="pottedPlant7" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="6"]
+transform = Transform( 0.465813, -0.0178086, 0.00815453, -0.043245, 0.998558, 0.000660149, -0.0304801, -0.00101617, 1.00046, -0.154087, -0.0455006, -0.5222 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="pottedPlant9" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="7"]
+transform = Transform( 0.465813, -0.0178086, 0.00815453, -0.043245, 0.998558, 0.000660149, -0.0304801, -0.00101618, 1.00046, 0.0762463, -0.026854, -0.509058 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="lampWall" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle/pottedPlant9" index="0"]
+transform = Transform( -0.516948, -0.0547506, -0.349278, -0.0989541, 0.92207, -0.0569874, 1.12704, 0.00286095, -1.03413, -1.04132, 1.0991, 2.21383 )
+mesh = ExtResource( 34 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="pottedPlant8" type="MeshInstance" parent="sofa/books/mesha/cabinetBedDrawerTable2/stoolBar/washerDryerStacked/rugRectangle" index="8"]
+transform = Transform( 0.465813, -0.0178086, 0.00815453, -0.043245, 0.998558, 0.000660149, -0.0304801, -0.00101617, 1.00046, -0.154087, -0.0455006, -0.5222 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="sofa/books/mesha" index="2"]
+transform = Transform( 0.252154, 0, -0.00125313, 0, 0.0894061, 0, -0.00125314, 0, 0.230234, 0, 0.0601379, 0 )
+shape = SubResource( 8 )
+
+[node name="plantSmall3" type="MeshInstance" parent="sofa/books/mesha" index="3"]
+transform = Transform( 1, 0, -3.72529e-09, 0, 1, 0, 3.72529e-09, 0, 1, 0.179466, 0.159368, 0.0608063 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="rugRectangle" type="MeshInstance" parent="sofa/books/mesha" index="4"]
+transform = Transform( 1, 0, -2.6077e-08, 0, 0.999999, 0, 7.45058e-09, 0, 1, 1.84178, -0.223967, -2.02976 )
+mesh = ExtResource( 33 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="wallWindowSlide21" type="MeshInstance" parent="." index="361"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29539, 0.096227, -0.289085 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="bear5" type="MeshInstance" parent="." index="362"]
+transform = Transform( 0.0310625, 0, -0.999517, 0, 1, 0, 0.999517, 0, 0.0310625, 8.76422, 0.74388, 2.47745 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="bear6" type="MeshInstance" parent="." index="363"]
+transform = Transform( 0.0310625, 0, -0.999517, 0, 1, 0, 0.999517, 0, 0.0310625, 8.83982, 0.74388, 3.36556 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="bear7" type="MeshInstance" parent="." index="364"]
+transform = Transform( 0.0310625, 0, -0.999517, 0, 1, 0, 0.999517, 0, 0.0310625, 8.83982, 0.74388, 4.52657 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="bear8" type="MeshInstance" parent="." index="365"]
+transform = Transform( 0.0310625, 0, -0.999517, 0, 1, 0, 0.999517, 0, 0.0310625, 8.856, 0.74388, 5.97921 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="cardboardBoxClosed" type="MeshInstance" parent="." index="366"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.54574, 0.049367, 7.41115 )
+mesh = ExtResource( 35 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="lampSquareCeiling" type="MeshInstance" parent="." index="367"]
+transform = Transform( 0.996883, 0, -0.0788912, -0.0788333, 0.0383019, -0.996152, 0.00302169, 0.999266, 0.0381826, 7.62425, 1.19927, 7.43102 )
+mesh = ExtResource( 36 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="lampSquareCeiling2" type="MeshInstance" parent="." index="368"]
+transform = Transform( 0.996883, 0, -0.0788912, -0.0788333, 0.0383019, -0.996152, 0.00302169, 0.999266, 0.0381826, 6.10236, 1.19927, 7.43102 )
+mesh = ExtResource( 36 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="lampSquareCeiling3" type="MeshInstance" parent="." index="369"]
+transform = Transform( 0.996883, 0, -0.0788912, -0.0788333, 0.0383019, -0.996152, 0.00302169, 0.999266, 0.0381826, 6.82699, 1.19927, 7.43102 )
+mesh = ExtResource( 36 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="lampSquareCeiling4" type="MeshInstance" parent="." index="370"]
+transform = Transform( 0.996883, 0, -0.0788912, -0.0788333, 0.0383019, -0.996152, 0.00302169, 0.999266, 0.0381826, 4.99228, 1.19927, 7.43102 )
+mesh = ExtResource( 36 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="rugRectangle" type="MeshInstance" parent="lampSquareCeiling4" index="0"]
+transform = Transform( 1.93252, -0.0783276, 0.029081, -0.0136743, 0.0411492, 1.025, -0.153241, -0.996079, 0.0399008, 2.50977, -0.869416, 0.87917 )
+mesh = ExtResource( 33 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="doorway" type="MeshInstance" parent="." index="371"]
+transform = Transform( 0.113571, 0, -0.99353, 0, 1.27351, 0, 1.38671, 0, 0.158516, 0.785102, 0.0962269, 7.53106 )
+mesh = ExtResource( 37 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="bear" type="MeshInstance" parent="doorway" index="0"]
+transform = Transform( 0.170678, 0, 0.721991, 0, 1, 0, -1.38079, 0, 0.0180681, 2.84708, 0.657778, -0.126927 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="wallWindow4" type="MeshInstance" parent="." index="372"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.421236, -5.37566, 0.194045, 18.4527 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="wallWindow7" type="MeshInstance" parent="." index="373"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.421236, -7.08621, 0.194045, 18.4527 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="wallWindow6" type="MeshInstance" parent="." index="374"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.421236, -4.04743, 0.194045, 18.4527 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="wallWindow5" type="MeshInstance" parent="." index="375"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.421236, -5.37566, 0.194045, 18.4527 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null

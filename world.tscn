@@ -1,0 +1,345 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://enemy.gd" type="Script" id=2]
+[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://black.jpeg" type="Texture" id=4]
+[ext_resource path="res://ASSETS2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://radionoise.wav" type="AudioStream" id=6]
+[ext_resource path="res://health.tscn" type="PackedScene" id=7]
+[ext_resource path="res://ammo.tscn" type="PackedScene" id=8]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="Curve3D" id=2]
+_data = {
+"points": PoolVector3Array(  ),
+"tilts": PoolRealArray(  )
+}
+
+[sub_resource type="SphereShape" id=3]
+radius = 5.91732
+
+[sub_resource type="CubeMesh" id=4]
+
+[sub_resource type="PanoramaSky" id=5]
+panorama = ExtResource( 4 )
+
+[sub_resource type="Environment" id=6]
+background_mode = 2
+background_sky = SubResource( 5 )
+fog_enabled = true
+fog_color = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+fog_sun_color = Color( 1, 0.901961, 0.701961, 1 )
+fog_depth_begin = 0.0
+fog_depth_curve = 0.5
+fog_height_enabled = true
+fog_height_min = 1.5
+fog_height_max = -2.5
+fog_height_curve = 2.0
+tonemap_mode = 2
+auto_exposure_enabled = true
+auto_exposure_min_luma = 0.2
+ss_reflections_enabled = true
+dof_blur_near_enabled = true
+dof_blur_near_quality = 0
+glow_enabled = true
+glow_bicubic_upscale = true
+adjustment_enabled = true
+
+[sub_resource type="BoxShape" id=7]
+
+[node name="world" type="Spatial"]
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 0.998883, -0.00287387, 0.0471565, -0.047244, -0.0607624, 0.997034, 2.43853e-10, -0.998148, -0.0608303, 1.86905, 29.7343, 51.6145 )
+light_color = Color( 0.878906, 0.0858307, 0.0858307, 1 )
+
+[node name="SpotLight4" type="SpotLight" parent="."]
+transform = Transform( 0.998883, -0.00287387, 0.0471565, -0.047244, -0.0607624, 0.997034, 2.43853e-10, -0.998148, -0.0608303, -27.9651, 29.7354, 29.5669 )
+light_color = Color( 0.878906, 0.0858307, 0.0858307, 1 )
+
+[node name="SpotLight2" type="SpotLight" parent="."]
+transform = Transform( 0.998883, -0.00287387, 0.0471565, -0.047244, -0.0607624, 0.997034, 2.43853e-10, -0.998148, -0.0608303, 9.50365, 29.0197, 38.8424 )
+light_color = Color( 0.878906, 0.0858307, 0.0858307, 1 )
+
+[node name="SpotLight3" type="SpotLight" parent="."]
+transform = Transform( -0.988303, -0.0402645, 0.147094, -0.00744435, 0.976104, 0.217175, -0.152323, 0.21354, -0.964986, 9.50365, 28.0184, 48.3105 )
+light_color = Color( 0.878906, 0.0858307, 0.0858307, 1 )
+
+[node name="enemy" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.598774, -0.0383446, -8.02192, 29.5596, -13.0746 )
+
+[node name="enemy32" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 4.35318, 29.5596, 11.2563 )
+
+[node name="enemy33" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 9.61902, 29.5596, 11.2563 )
+
+[node name="enemy34" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 1.05517, 29.3597, 1.52312 )
+
+[node name="enemy35" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 6.14399, 29.3597, 1.52312 )
+
+[node name="enemy36" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 19.7501, 29.3597, 1.52312 )
+
+[node name="enemy37" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 6.50565, 26.3213, 30.6657 )
+
+[node name="enemy39" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 8.96449, 26.3213, 30.6657 )
+
+[node name="enemy40" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 11.6297, 26.3213, 30.6657 )
+
+[node name="enemy41" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 10.3711, 26.3213, 38.281 )
+
+[node name="enemy42" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 11.5015, 26.3213, 38.281 )
+
+[node name="enemy43" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 7.79163, 26.3213, 41.0891 )
+
+[node name="enemy44" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 7.79163, 26.3213, 44.5429 )
+
+[node name="enemy45" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 8.37511, 26.3213, 45.843 )
+
+[node name="enemy46" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 1.37511, 30.3213, 41.843 )
+
+[node name="enemy47" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -1.62489, 30.3213, 38.843 )
+
+[node name="enemy48" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -5.62489, 30.3213, 38.843 )
+
+[node name="enemy49" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -7.62489, 30.3213, 38.843 )
+
+[node name="enemy50" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -16.6249, 30.3213, 38.843 )
+
+[node name="enemy51" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -28.6249, 30.3213, 33.843 )
+
+[node name="enemy52" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -26.6249, 30.3213, 33.843 )
+
+[node name="enemy53" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -10.6249, 30.3213, 31.843 )
+
+[node name="enemy54" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -10.6249, 30.3213, 21.843 )
+
+[node name="enemy55" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -9.62489, 30.3213, 13.843 )
+
+[node name="enemy56" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -15.6249, 30.3213, 13.843 )
+
+[node name="enemy57" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -24.6249, 30.3213, 13.843 )
+
+[node name="enemy58" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -24.6249, 30.3213, 13.843 )
+
+[node name="enemy59" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -25.6249, 30.3213, 13.843 )
+
+[node name="enemy38" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 5.30098, 29.3597, 14.069 )
+
+[node name="enemy2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, -10.4942, 29.4578, 3.95293 )
+
+[node name="enemy3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.997956, -0.0639076, 9.94395, 26.684, 23.0326 )
+
+[node name="enemy12" type="KinematicBody" parent="." groups=[
+"enemies",
+]]
+transform = Transform( 0.0989231, -0.000242844, 0.00379216, -0.00467875, -0.00778405, 0.121553, 0, -0.127772, -0.00818235, 4.92148, 27.0473, 23.9101 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="enemy12"]
+transform = Transform( 0.49908, 0.00027013, -0.00421827, 0.000270131, 0.243327, -0.0234145, -0.00421825, -0.0234143, 0.607457, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Path" type="Path" parent="enemy12"]
+curve = SubResource( 2 )
+
+[node name="PathFollow" type="PathFollow" parent="enemy12/Path"]
+transform = Transform( 1, 0, 0, 0, 1, 1.49012e-08, 0, -1.49012e-08, 1, 0, 0, 0 )
+offset = 2.0
+
+[node name="sens" type="Area" parent="enemy12"]
+input_ray_pickable = false
+
+[node name="CollisionShape" type="CollisionShape" parent="enemy12/sens"]
+transform = Transform( 1, 2.79397e-09, -2.23517e-08, 8.08645e-11, 1, 2.98023e-08, 2.24315e-08, -2.98023e-08, 1, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="enemy12"]
+transform = Transform( 0.378632, 0.000565816, -0.0088356, 0.000565815, 0.157629, -0.0288911, -0.00883552, -0.0288909, 0.606929, 0, 0, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="enemy29" type="KinematicBody" parent="." groups=[
+"enemies",
+]]
+transform = Transform( 0.0989231, -0.000242844, 0.00379216, -0.00467875, -0.00778405, 0.121553, 0, -0.127772, -0.00818235, -8.51871, 29.7343, 40.3217 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="enemy29"]
+transform = Transform( 0.49908, 0.00027013, -0.00421827, 0.000270131, 0.243327, -0.0234145, -0.00421825, -0.0234143, 0.607457, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Path" type="Path" parent="enemy29"]
+curve = SubResource( 2 )
+
+[node name="PathFollow" type="PathFollow" parent="enemy29/Path"]
+transform = Transform( 1, 0, 0, 0, 1, 1.49012e-08, 0, -1.49012e-08, 1, 0, 0, 0 )
+offset = 2.0
+
+[node name="sens" type="Area" parent="enemy29"]
+input_ray_pickable = false
+
+[node name="CollisionShape" type="CollisionShape" parent="enemy29/sens"]
+transform = Transform( 1, 2.79397e-09, -2.23517e-08, 8.08645e-11, 1, 2.98023e-08, 2.24315e-08, -2.98023e-08, 1, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="enemy29/sens"]
+transform = Transform( 1, 2.88324e-09, -2.20627e-08, -1.18664e-10, 1, 3.72529e-08, 2.24485e-08, -2.23517e-08, 1, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="enemy29"]
+transform = Transform( 0.378632, 0.000565816, -0.0088356, 0.000565815, 0.157629, -0.0288911, -0.00883552, -0.0288909, 0.606929, 0, 0, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="enemy30" type="KinematicBody" parent="." groups=[
+"enemies",
+]]
+transform = Transform( 0.0989231, -0.000242844, 0.00379216, -0.00467875, -0.00778405, 0.121553, 0, -0.127772, -0.00818235, -8.51871, 29.7343, 39.2124 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="enemy30"]
+transform = Transform( 0.49908, 0.00027013, -0.00421827, 0.000270131, 0.243327, -0.0234145, -0.00421825, -0.0234143, 0.607457, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Path" type="Path" parent="enemy30"]
+curve = SubResource( 2 )
+
+[node name="PathFollow" type="PathFollow" parent="enemy30/Path"]
+transform = Transform( 1, 0, 0, 0, 1, 1.49012e-08, 0, -1.49012e-08, 1, 0, 0, 0 )
+offset = 2.0
+
+[node name="sens" type="Area" parent="enemy30"]
+input_ray_pickable = false
+
+[node name="CollisionShape" type="CollisionShape" parent="enemy30/sens"]
+transform = Transform( 1, 2.79397e-09, -2.23517e-08, 8.08645e-11, 1, 2.98023e-08, 2.24315e-08, -2.98023e-08, 1, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="enemy30/sens"]
+transform = Transform( 1, 2.88324e-09, -2.20627e-08, -1.18664e-10, 1, 3.72529e-08, 2.24485e-08, -2.23517e-08, 1, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="enemy30"]
+transform = Transform( 0.378632, 0.000565816, -0.0088356, 0.000565815, 0.157629, -0.0288911, -0.00883552, -0.0288909, 0.606929, 0, 0, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.423893, 0, 0, 0, 0.385358, 0, 0, 0, 0.305723, 1.15424, 29.6654, -1.91215 )
+
+[node name="ui" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -9.60272
+margin_top = -3.67957
+margin_right = -9.60272
+margin_bottom = -3.67957
+
+[node name="Label" type="Label" parent="ui"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -198.0
+margin_top = -94.0147
+margin_bottom = -3.01471
+text = "AMMO
+2/2"
+
+[node name="Label2" type="Label" parent="ui"]
+margin_left = 17.0
+margin_top = 520.0
+margin_right = 161.0
+margin_bottom = 601.0
+rect_scale = Vector2( 1.04, 1 )
+text = "health
+100/100"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 6 )
+
+[node name="w" parent="." instance=ExtResource( 5 )]
+transform = Transform( 2.13962, 0, 0, 0, 2.35384, 0, 0, 0, 2.0166, 0.208238, 28.8595, -0.135923 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 6 )
+
+[node name="health" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.105196, 0, 0, 0, 0.0869592, 0, 0, 0, 0.0881874, -13.9044, 29.2482, -7.70674 )
+
+[node name="health3" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.105196, 0, 0, 0, 0.0869592, 0, 0, 0, 0.0881874, -1.62123, 29.2482, 8.20413 )
+
+[node name="health4" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.105196, 0, 0, 0, 0.0869592, 0, 0, 0, 0.0881874, -1.62123, 29.2482, 8.79345 )
+
+[node name="health5" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.104107, 0, -0.0126574, 0, 0.0869592, 0, 0.0150987, 0, 0.0872743, 15.853, 29.2482, 9.15301 )
+
+[node name="health6" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.104107, 0, -0.0126574, 0, 0.0869592, 0, 0.0150987, 0, 0.0872743, 11.562, 25.9612, 30.2702 )
+
+[node name="health7" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.104107, 0, -0.0126574, 0, 0.0869592, 0, 0.0150987, 0, 0.0872743, 11.562, 25.9612, 25.2991 )
+
+[node name="ammo" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.224112, 0, 0, 0, 0.121998, 0, 0, 0, 0.156542, 0.642701, 29.178, 11.6235 )
+
+[node name="ammo2" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.224112, 0, 0, 0, 0.121998, 0, 0, 0, 0.156542, 6.94191, 29.178, 10.273 )
+
+[node name="ammo3" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.224112, 0, 0, 0, 0.121998, 0, 0, 0, 0.156542, 4.07926, 29.178, 11.6235 )
+
+[node name="health2" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.105196, 0, 0, 0, 0.0869592, 0, 0, 0, 0.0881874, 1.53044, 29.2167, 13.8689 )
+
+[node name="enemy60" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999263, -0.00245307, 0.0383062, -0.0383846, -0.0638605, 0.997221, 0, -0.674029, -0.0431638, 0.0010376, 29.3878, -17.0451 )
+
+[node name="Area" type="Area" parent="." groups=[
+"over",
+]]
+transform = Transform( 4.70495, 0, 0, 0, 5.46764, 0, 0, 0, 3.91738, -33.3293, 30.3408, 15.6483 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 0.212542, 0, 0, 0, 0.182894, 0, 0, 0, 0.255273, 0.0123987, -0.0411582, -0.00497842 )
+shape = SubResource( 7 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( -0.286818, 0, -0.957985, 0, 1, 0, 0.957985, 0, -0.286818, -47.7379, 35.1505, -15.2628 )
+light_color = Color( 0.584314, 0.156863, 0.0431373, 1 )
+light_energy = 0.0
+light_indirect_energy = 0.0
+[connection signal="body_shape_entered" from="Area" to="player" method="_on_Area_body_shape_entered"]

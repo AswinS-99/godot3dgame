@@ -1,0 +1,115 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://new.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/OBJ format/wall.obj" type="ArrayMesh" id=2]
+
+[node name="Spatial" instance=ExtResource( 1 )]
+
+[node name="StaticBody240" parent="." index="66"]
+transform = Transform( 4.66728, 0.00340203, -0.586102, -0.0138093, 1.15639, 0.00181634, -0.331016, -0.000274006, 0.388528, 8.73577, -0.200397, 7.75948 )
+
+[node name="StaticBody264" parent="." index="71"]
+transform = Transform( 4.67791, 0.0034128, -0.619445, -0.0138093, 1.15639, 0.00181634, 0.10097, 4.10141e-05, 0.332801, 1.543, -0.0141015, 27.0822 )
+
+[node name="StaticBody260" parent="." index="76"]
+transform = Transform( 0.12852, 6.11133e-05, 0.329147, -0.0138093, 1.15639, 0.00181634, -4.67723, -0.0034125, 0.621395, 1.3458, -0.0141015, 22.2588 )
+
+[node name="wall4" type="MeshInstance" parent="StaticBody260" index="1"]
+transform = Transform( 0.999999, 5.82077e-11, -2.98023e-08, 9.31323e-10, 0.999999, -3.49246e-10, -1.19209e-07, -1.45519e-10, 1, 0.412279, 0.00730115, -0.505548 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="wall3" type="MeshInstance" parent="StaticBody260" index="2"]
+transform = Transform( 0.999999, 0, -2.98023e-08, 1.86265e-09, 0.999999, -1.16415e-10, 0, -5.82077e-11, 1, 0.246629, 0.11589, -0.341939 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="wall2" type="MeshInstance" parent="StaticBody260" index="3"]
+transform = Transform( 0.999897, -0.00349602, 1.33812e-05, 0.0581947, 0.999896, -0.00765328, 1.32024e-05, 0.000447516, 0.999998, 0.246629, 0.11589, -0.34194 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="StaticBody263" parent="." index="77"]
+transform = Transform( 0.12852, 6.11133e-05, 0.329147, -0.0138093, 1.15639, 0.00181634, -4.67723, -0.0034125, 0.621395, 0.157638, -0.0141015, 22.2588 )
+
+[node name="wall2" parent="StaticBody263" index="2"]
+transform = Transform( 0.999897, -0.00349602, 1.33812e-05, 0.0581947, 0.999896, -0.00765328, 1.32024e-05, 0.000447516, 0.999998, 0.246629, 0.11589, -0.34194 )
+
+[node name="wall4" parent="StaticBody265" index="1"]
+transform = Transform( 0.999999, 6.18456e-11, -2.98023e-08, -8.12179e-10, 0.999999, -3.69255e-10, 2.98023e-08, -9.45874e-11, 1, 0.24663, 0.11589, -0.341938 )
+
+[node name="wall" parent="StaticBody268" index="0"]
+transform = Transform( 0.999999, 3.63798e-12, -4.47035e-08, -2.67505e-09, 0.999999, -2.53749e-10, 2.98023e-08, -8.00355e-11, 1, 0.24663, 0.11589, -0.341934 )
+
+[node name="wall4" parent="StaticBody268" index="1"]
+transform = Transform( 0.999999, 1.09139e-10, -4.47035e-08, -1.13732e-09, 0.999999, -3.36513e-10, -2.98023e-08, -1.74623e-10, 1, 0.246035, 0.115879, -0.339424 )
+
+[node name="StaticBody269" parent="." index="89"]
+transform = Transform( 4.6782, 0.00341171, -0.605605, -0.0138093, 1.15639, 0.00181634, -0.0866524, -9.58413e-05, 0.357368, -5.67408, -0.0151079, 21.1531 )
+
+[node name="wall" parent="StaticBody269" index="0"]
+transform = Transform( 0.999999, 3.63798e-12, -4.47035e-08, -2.67505e-09, 0.999999, -2.53749e-10, 2.98023e-08, -8.00355e-11, 1, 0.24663, 0.11589, -0.341934 )
+
+[node name="StaticBody267" parent="." index="92"]
+transform = Transform( 4.6782, 0.00341171, -0.605605, -0.0138093, 1.15639, 0.00181634, -0.0866524, -9.58413e-05, 0.357368, -7.59803, -0.0141015, 18.5017 )
+
+[node name="StaticBody261" parent="." index="109"]
+transform = Transform( 0.12852, 6.11133e-05, 0.329147, -0.0138093, 1.15639, 0.00181634, -4.67723, -0.0034125, 0.621395, 1.40766, -0.0141015, 17.7058 )
+
+[node name="wall3" parent="StaticBody261" index="2"]
+transform = Transform( 0.999999, 5.82077e-11, -2.98023e-08, 9.31323e-10, 0.999999, -3.49246e-10, 0, -8.73115e-11, 1, 0.246629, 0.11589, -0.341939 )
+
+[node name="CollisionShape3" parent="StaticBody261" index="6"]
+transform = Transform( 1.30712, 0, -4.65661e-10, 1.86265e-09, 0.648762, -1.45519e-11, 2.5332e-07, -1.67347e-10, 0.0560699, -0.249351, 0.759731, -0.297108 )
+
+[node name="StaticBody254" parent="." index="115"]
+transform = Transform( 0.0435705, -8.59873e-07, 0.340376, -0.0138093, 1.15639, 0.00181634, -4.6788, -0.00341305, 0.615316, 0.76928, -0.183042, 7.79119 )
+
+[node name="StaticBody243" parent="." index="118"]
+transform = Transform( 0.0447493, 0, 0.340221, 0, 1.1564, 0, -4.67881, 0, 0.615404, 1.19164, -0.20515, 3.12242 )
+
+[node name="StaticBody245" parent="." index="119"]
+transform = Transform( 4.67589, 0, -0.599056, 0, 1.1564, 0, -0.171119, 0, 0.368246, -0.167491, -0.20515, 6.58262 )
+
+[node name="CollisionShape" parent="StaticBody245" index="1"]
+transform = Transform( 1.30712, 0, 9.31323e-10, 0, 0.648762, 0, 2.98023e-08, 0, 0.0560699, -0.249349, 0.759731, -0.297106 )
+
+[node name="wall" parent="StaticBody249" index="0"]
+transform = Transform( 0.820886, 0, 0.0228472, 0, 1, 0, -0.0991716, 0, 1.01265, 0.14507, 0.11589, -0.398179 )
+
+[node name="StaticBody215" parent="." index="174"]
+transform = Transform( -0.0141889, 0, 0.999899, 0, 1, 0, -0.999899, 0, -0.0141889, 1.73231, -1.4306, 26.2921 )
+
+[node name="StaticBody214" parent="." index="175"]
+transform = Transform( -0.0141889, 0, 0.999899, 0, 1, 0, -0.999899, 0, -0.0141889, 1.73216, -1.43601, 25.333 )
+
+[node name="wall" type="MeshInstance" parent="StaticBody99" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.246626, 0.132044, -0.341938 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="floorFull" parent="FLOOR4/CollisionShape2" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.496187, -0.0321736, -0.510828 )
+
+[node name="floorFull" parent="FLOOR9/CollisionShape2" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.496187, -0.0321736, -0.510828 )

@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.980392, 0.964706, 0.964706, 1 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.945098, 0.227451, 0.0352941, 1 )
+
+[sub_resource type="CubeMesh" id=4]
+material = SubResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.898039, 0.247059, 0.0509804, 1 )
+
+[sub_resource type="CubeMesh" id=6]
+material = SubResource( 5 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 1, 1.17999, 1 )
+
+[node name="health" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0141098, 0, 0.000716209 )
+
+[node name="Area" type="Area" parent="." groups=[
+"medkit",
+]]
+transform = Transform( 1, 0, 0, 0, 0.970428, 0, 0, 0, 1, 0, 0, 0 )
+input_ray_pickable = false
+
+[node name="MeshInstance" type="MeshInstance" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.18447, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="Area"]
+transform = Transform( 0.178903, 0, 0, 0, 0.666353, 0, 0, 0, 0.138648, -0.041559, 1.33661, 0.91012 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Area/MeshInstance2"]
+transform = Transform( -0.00639798, 3.46644, 0, -0.288021, -0.00555044, 0, 0, 0, 0.536732, 0.00614895, 0.0627134, 0.162815 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="Area/MeshInstance2"]
+transform = Transform( -0.00639798, 3.46644, 0, -0.288021, -0.00555044, 0, 0, 0, 0.536732, 0.00614895, 0.0627134, 0.162815 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="MeshInstance5" type="MeshInstance" parent="Area"]
+transform = Transform( 0.178903, 0, 0, 0, 0.666353, 0, 0, 0, 0.138648, -0.041559, 1.27057, -0.995764 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Area/MeshInstance5"]
+transform = Transform( -0.00639798, 3.46644, 0, -0.288021, -0.00555044, 0, 0, 0, 0.536732, 0.00614895, 0.0627133, 0.162815 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="Area/MeshInstance5"]
+transform = Transform( -0.00639798, 3.46644, 0, -0.288021, -0.00555044, 0, 0, 0, 0.536732, 0.00614895, 0.0627134, 0.162815 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Area"]
+transform = Transform( -7.82008e-09, 0, 0.138648, 0, 0.666353, 0, -0.178903, 0, -6.06051e-09, 0.885565, 1.24067, 0.0411577 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Area/MeshInstance3"]
+transform = Transform( -0.00639798, 3.46644, -7.10543e-15, -0.288021, -0.00555044, 0, 0, -2.84217e-14, 0.536732, 0.00614893, 0.0627133, 0.3634 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="Area"]
+transform = Transform( -7.82008e-09, 0, 0.138648, 0, 0.666353, 0, -0.178903, 0, -6.06051e-09, -0.960025, 1.24067, 0.0411577 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Area/MeshInstance4"]
+transform = Transform( -0.00639798, 3.46644, 0, -0.288021, -0.00555044, 0, 0, 0, 0.536732, 0.00614895, 0.0627133, 0.162815 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.23264, 0, 1.16018, 0 )
+shape = SubResource( 7 )

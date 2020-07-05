@@ -1,0 +1,201 @@
+[gd_scene load_steps=8 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.0980392, 0.376471, 0.0705882, 1 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+
+[sub_resource type="BoxShape" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.0980392, 0.376471, 0.0705882, 1 )
+
+[sub_resource type="CubeMesh" id=5]
+material = SubResource( 4 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.670588, 0.486275, 0.0980392, 1 )
+
+[sub_resource type="CapsuleMesh" id=7]
+material = SubResource( 6 )
+
+[node name="ammo" type="Spatial"]
+
+[node name="Area" type="Area" parent="." groups=[
+"ammo",
+]]
+transform = Transform( 0.657921, 0, 0, 0, 0.299611, 0, 0, 0, 0.789213, 0, 0.352695, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0558528, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+shape = SubResource( 3 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Area"]
+transform = Transform( 0.871527, 0.0185291, 0, -0.661503, 0.168719, 0, 0, 0, 0.967369, 0, 1.60784, 0.00541048 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, 0.816078 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, 0.636551 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance5" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, 0.457689 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance6" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, 0.257383 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance7" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, 0.0687767 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance8" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, -0.104219 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance9" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, -0.280228 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance10" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, -0.47023 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance11" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, -0.663045 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance12" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.768268, 0.890525, -0.833469 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance13" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.54942, 0.890525, -0.833469 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance14" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, -0.833469 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance15" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, -0.833469 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance16" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, -0.677203 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance17" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, -0.531093 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance18" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, -0.373201 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance19" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, -0.210161 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance20" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, -0.0511103 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance21" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, 0.121989 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance22" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, 0.317987 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance23" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, 0.513043 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance24" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, 0.712425 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance25" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.304923, 0.890525, 0.879126 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance26" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, 0.879126 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance27" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, 0.703228 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance28" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, 0.476999 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance29" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, 0.290647 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance30" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, 0.0805796 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance31" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, -0.115043 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance32" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, -0.313074 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance33" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, -0.517469 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="MeshInstance34" type="MeshInstance" parent="Area"]
+transform = Transform( 0.0834577, 0, 0, 0, 0.421861, 0, 0, 0, 0.0432279, -0.5399, 0.890525, -0.687955 )
+mesh = SubResource( 7 )
+material/0 = null

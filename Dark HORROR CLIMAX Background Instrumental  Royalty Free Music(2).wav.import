@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Dark HORROR CLIMAX Background Instrumental  Royalty Free Music(2).wav-393ce7fb08247eb829a798fafa7b3852.sample"
+
+[deps]
+
+source_file="res://Dark HORROR CLIMAX Background Instrumental  Royalty Free Music(2).wav"
+dest_files=[ "res://.import/Dark HORROR CLIMAX Background Instrumental  Royalty Free Music(2).wav-393ce7fb08247eb829a798fafa7b3852.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

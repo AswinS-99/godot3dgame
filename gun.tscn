@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fire"
+length = 0.5
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("MeshInstance:translation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.223938, 0.429055 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -2.70914, 0, 2.0021 ), Vector3( -2.70914, 0, -4.09733 ), Vector3( -2.70914, 0, 2.13371 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "fire2"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("MeshInstance:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -2.70914, 0, 2.13371 ), Vector3( -2.70914, 0, 0.185363 ), Vector3( -2.70914, 0, 1.58748 ) ]
+}
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.694118, 0.560784, 0.52549, 1 )
+
+[sub_resource type="CylinderMesh" id=4]
+
+[node name="gun" type="StaticBody"]
+transform = Transform( 0.701589, 0, 0, 0, 0.0848787, 0, 0, 0, 0.098305, -0.193538, 0.877833, -0.782272 )
+
+[node name="anime" type="AnimationPlayer" parent="."]
+anims/fire = SubResource( 1 )
+anims/fire2 = SubResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.103394, 0, 0, 0, 0.0141175, -1.40326, 0, 4.60084, 0.00321001, -2.70914, 0, 2.13371 )
+material_override = SubResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null

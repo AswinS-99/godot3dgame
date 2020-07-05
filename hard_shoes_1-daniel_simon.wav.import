@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/hard_shoes_1-daniel_simon.wav-2cbc2728d57a13bb64041e0747f466fe.sample"
+
+[deps]
+
+source_file="res://hard_shoes_1-daniel_simon.wav"
+dest_files=[ "res://.import/hard_shoes_1-daniel_simon.wav-2cbc2728d57a13bb64041e0747f466fe.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

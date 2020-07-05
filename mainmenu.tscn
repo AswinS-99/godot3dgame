@@ -1,0 +1,113 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://XLines.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://[No Copyright Music] Dark Horror Theme   CREEPY HORROR MUSIC  Royalty Free Music  VIVEK ABHISHEK.wav" type="AudioStream" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+margin_right = 32.0
+margin_bottom = 27.0
+script = ExtResource( 1 )
+
+[node name="BACKGROUND" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1.16638, -1.10803 )
+scale = Vector2( 1.00953, 1.02048 )
+
+[node name="play" type="Container" parent="."]
+margin_left = 96.2277
+margin_top = 103.0
+margin_right = 210.228
+margin_bottom = 135.0
+
+[node name="playbutton" type="Button" parent="play"]
+margin_left = -19.2277
+margin_top = -8.0
+margin_right = 165.772
+margin_bottom = 40.0
+rect_scale = Vector2( 0.76, 1 )
+flat = true
+align = 0
+
+[node name="btn" type="TouchScreenButton" parent="play"]
+position = Vector2( 16.8895, 12.247 )
+scale = Vector2( 0.613, 0.628 )
+
+[node name="Label" type="Label" parent="play"]
+margin_left = 15.7723
+margin_top = 8.0
+margin_right = 92.7723
+margin_bottom = 37.0
+rect_scale = Vector2( 2.38552, 1.88093 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 0.0
+text = "PLAY"
+
+[node name="exit" type="Container" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="exitbutton" type="Button" parent="exit"]
+margin_left = 882.744
+margin_top = 541.433
+margin_right = 894.744
+margin_bottom = 561.433
+rect_scale = Vector2( 9.11392, 1.92099 )
+flat = true
+
+[node name="Label" type="Label" parent="exit"]
+margin_left = 903.615
+margin_top = 550.027
+margin_right = 943.615
+margin_bottom = 564.027
+rect_scale = Vector2( 1.98505, 1.59049 )
+text = "QUIT"
+
+[node name="btn" type="TouchScreenButton" parent="exit"]
+position = Vector2( 918.348, 557.393 )
+scale = Vector2( 1.6, 1 )
+
+[node name="help" type="Container" parent="."]
+margin_left = 18.093
+margin_top = -6.46178
+margin_right = 58.093
+margin_bottom = 33.5382
+
+[node name="btn" type="TouchScreenButton" parent="help"]
+position = Vector2( 124.002, 554.938 )
+
+[node name="Label" type="Label" parent="help"]
+margin_left = 119.091
+margin_top = 545.116
+margin_right = 159.091
+margin_bottom = 559.116
+rect_scale = Vector2( 2.17375, 1.72677 )
+text = "HELP"
+
+[node name="helpbutton" type="Button" parent="help"]
+margin_left = 113.0
+margin_top = 535.0
+margin_right = 216.0
+margin_bottom = 570.0
+flat = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 250.405
+margin_top = 18.8934
+margin_right = 514.405
+margin_bottom = 37.8934
+rect_scale = Vector2( 2.11209, 2.50281 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0392157, 0.0352941, 0.0352941, 1 )
+custom_colors/font_outline_modulate = Color( 0.027451, 0.027451, 0.027451, 1 )
+custom_colors/font_color_shadow = Color( 0.0823529, 0, 0.815686, 1 )
+text = "DELTA COMBAT: APOCALYPSE"
+
+[node name="mainmenumusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+[connection signal="pressed" from="play/playbutton" to="." method="_on_playbutton_pressed"]
+[connection signal="pressed" from="exit/exitbutton" to="." method="_on_exitbutton_pressed"]
+[connection signal="pressed" from="help/helpbutton" to="." method="_on_helpbutton_pressed"]

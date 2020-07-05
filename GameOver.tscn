@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Control2.gd" type="Script" id=1]
+[ext_resource path="res://4k-wallpaper-black-and-white-bone-1270184.jpg" type="Texture" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 510.181, 303.701 )
+scale = Vector2( 0.168919, 0.149766 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 414.122
+margin_top = 71.4003
+margin_right = 490.122
+margin_bottom = 85.4003
+rect_scale = Vector2( 2.78413, 2.98676 )
+custom_colors/font_color = Color( 1, 0.964706, 0.964706, 1 )
+custom_colors/font_outline_modulate = Color( 0.960784, 0.0431373, 0.0431373, 1 )
+custom_colors/font_color_shadow = Color( 0.74902, 0.0862745, 0.0862745, 1 )
+text = "GAME OVER"
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 0.980392, 0.956863, 0.956863, 1 )
+margin_left = 893.793
+margin_top = 540.204
+margin_right = 905.793
+margin_bottom = 560.204
+rect_scale = Vector2( 2.05911, 1.51461 )
+text = "EXIT"
+flat = true
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

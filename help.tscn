@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Control3.gd" type="Script" id=1]
+[ext_resource path="res://dark-fairy-tale-fantasy-42263.jpg" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Control"]
+position = Vector2( 508.287, 304.653 )
+scale = Vector2( 0.176736, 0.153703 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 38.0
+margin_top = 23.0
+margin_right = 219.0
+margin_bottom = 173.0
+rect_scale = Vector2( 2.92, 3.22763 )
+text = "                            CONTROLS
+
+W -MOVE FORWARD
+S-MOVE BACKWARDS
+D-MOVE RIGHT
+A-MOVE LEFT
+SPACE BAR - JUMP
+R - RELOAD
+MOUSE LEFT CLICK - FIRE"
+
+[node name="Button" type="Button" parent="Control"]
+margin_left = 782.071
+margin_top = 461.59
+margin_right = 828.071
+margin_bottom = 481.59
+rect_scale = Vector2( 3.21843, 2.39361 )
+text = "BACK"
+flat = true
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_Button_pressed"]

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/MikeThePirate.obj-9761a25842def59bb7c0e47557c4d9df.mesh"
+
+[deps]
+
+files=[ "res://.import/MikeThePirate.obj-9761a25842def59bb7c0e47557c4d9df.mesh" ]
+
+source_file="res://MikeThePirate.obj"
+dest_files=[ "res://.import/MikeThePirate.obj-9761a25842def59bb7c0e47557c4d9df.mesh", "res://.import/MikeThePirate.obj-9761a25842def59bb7c0e47557c4d9df.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
